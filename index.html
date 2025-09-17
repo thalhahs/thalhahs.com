@@ -6,168 +6,163 @@
   <title>Coming Soon - Thalhah's Portfolio</title>
   <style>
     :root {
-      --color-bg-light: #f5fdf7;
-      --color-bg-dark: #0a1a0f;
-      --color-text-light: #0a1a0f;
-      --color-text-dark: #e6ffe6;
-      --color-accent: #1db954; /* hijau futuristik */
+      --bg-light: #fdfdfd;
+      --bg-dark: #0d1117;
+      --text-light: #0d1117;
+      --text-dark: #f5f5f5;
+      --accent: #1db954; /* hijau elegan */
     }
 
     body {
       margin: 0;
       padding: 0;
       font-family: "Poppins", sans-serif;
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: var(--color-bg-light);
-      color: var(--color-text-light);
-      transition: background 0.5s, color 0.5s;
-      overflow: hidden;
-      position: relative;
+      min-height: 100vh;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: all 0.5s ease;
     }
 
     body.dark {
-      background: var(--color-bg-dark);
-      color: var(--color-text-dark);
+      background: var(--bg-dark);
+      color: var(--text-dark);
     }
 
     .container {
       text-align: center;
-      position: relative;
-      z-index: 2;
       max-width: 700px;
       padding: 2rem;
-      animation: fadeInUp 2s ease;
+      animation: fadeIn 1.5s ease;
     }
 
     h1 {
-      font-size: 3.5rem;
-      letter-spacing: 2px;
-      margin-bottom: 1rem;
-      color: var(--color-accent);
-      text-shadow: 0 0 15px var(--color-accent);
-      animation: glow 2s infinite alternate;
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      animation: pulse 2s infinite alternate;
     }
 
     p {
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
-      opacity: 0.9;
-      animation: fadeIn 3s ease;
+      margin: 0.5rem 0 1rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
 
-    .lang-select {
-      margin: 1rem 0;
+    .countdown {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1.5rem 0;
+      color: var(--accent);
+    }
+
+    .contacts {
+      margin: 1.5rem 0;
+    }
+
+    .contacts a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+    .contacts a:hover {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .lang-select, .toggle-btn {
+      margin: 0.5rem;
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      border-radius: 8px;
+      border-radius: 6px;
       border: none;
       cursor: pointer;
-      z-index: 2;
-      position: relative;
     }
 
     .toggle-btn {
-      margin-top: 1.5rem;
-      padding: 0.5rem 1.2rem;
-      border: 2px solid var(--color-accent);
-      border-radius: 25px;
       background: transparent;
+      border: 2px solid var(--accent);
       color: inherit;
-      cursor: pointer;
       transition: all 0.3s;
-      z-index: 2;
-      position: relative;
     }
     .toggle-btn:hover {
-      background: var(--color-accent);
-      color: white;
-      box-shadow: 0 0 15px var(--color-accent);
-    }
-
-    /* Background Gradien Animasi */
-    .animated-bg {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(270deg, #1db954, #004d26, #0f381d, #00ff88);
-      background-size: 800% 800%;
-      animation: gradientMove 20s ease infinite;
-      z-index: 0;
-    }
-
-    /* Arabesque Pattern */
-    .pattern {
-      position: absolute;
-      inset: 0;
-      background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
-      opacity: 0.07;
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    /* Animasi Keyframes */
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px var(--color-accent); }
-      to { text-shadow: 0 0 30px var(--color-accent), 0 0 60px var(--color-accent); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+      background: var(--accent);
+      color: #fff;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Particle Canvas */
-    canvas {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
+    @keyframes pulse {
+      from { text-shadow: 0 0 5px var(--accent); }
+      to { text-shadow: 0 0 20px var(--accent); }
     }
   </style>
 </head>
 <body>
-  <div class="animated-bg"></div>
-  <canvas id="particles"></canvas>
-  <div class="pattern"></div>
-
   <div class="container">
-    <h1 id="title">Coming Soon</h1>
-    <p id="subtitle">My futuristic portfolio website is under construction.</p>
+    <h1 id="title">COMING SOON</h1>
+    <p id="subtitle">
+      My portfolio website is being crafted. Stay tuned for the launch next week!
+    </p>
 
-    <!-- Language Select -->
+    <!-- Countdown -->
+    <div id="countdown" class="countdown"></div>
+
+    <!-- Contact Info -->
+    <div class="contacts">
+      <a href="https://instagram.com/thalhah._" target="_blank">Instagram</a>
+      <a href="mailto:thalhah@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/thalhah" target="_blank">LinkedIn</a>
+      <a href="https://github.com/thalhahs" target="_blank">GitHub</a>
+    </div>
+
+    <!-- Controls -->
     <select id="langSelect" class="lang-select">
       <option value="en" selected>English</option>
+      <option value="id">Bahasa Indonesia</option>
       <option value="ar">العربية</option>
       <option value="jp">日本語</option>
     </select>
-
-    <!-- Toggle Dark/Light -->
     <button id="toggleMode" class="toggle-btn">Toggle Dark/Light</button>
   </div>
 
   <script>
-    // Multi-language
-    const langSelect = document.getElementById("langSelect");
+    // Multi-language translations
+    const translations = {
+      en: {
+        title: "COMING SOON",
+        subtitle: "My portfolio website is being crafted. Stay tuned for the launch next week!"
+      },
+      id: {
+        title: "SEGERA HADIR",
+        subtitle: "Website portofolio saya sedang dibuat. Nantikan peluncurannya pekan depan!"
+      },
+      ar: {
+        title: "قريباً",
+        subtitle: "موقعي الشخصي قيد الإنشاء. ترقبوا الإطلاق الأسبوع القادم!"
+      },
+      jp: {
+        title: "近日公開",
+        subtitle: "私のポートフォリオサイトは現在制作中です。来週の公開をお楽しみに！"
+      }
+    };
+
     const title = document.getElementById("title");
     const subtitle = document.getElementById("subtitle");
-    const translations = {
-      en: { title: "Coming Soon", subtitle: "My futuristic portfolio website is under construction." },
-      ar: { title: "قريباً", subtitle: "موقعي الشخصي ذو الطابع المستقبلي قيد الإنشاء." },
-      jp: { title: "近日公開", subtitle: "私の未来的なポートフォリオサイトは現在制作中です。" }
-    };
+    const langSelect = document.getElementById("langSelect");
+
     langSelect.addEventListener("change", e => {
       const lang = e.target.value;
       title.textContent = translations[lang].title;
@@ -175,63 +170,35 @@
       document.documentElement.lang = lang;
     });
 
-    // Dark / Light Mode
+    // Dark/Light mode toggle
     document.getElementById("toggleMode").addEventListener("click", () => {
       document.body.classList.toggle("dark");
     });
 
-    // Particle Animation
-    const canvas = document.getElementById("particles");
-    const ctx = canvas.getContext("2d");
-    let particles = [];
+    // Countdown (7 days from now)
+    const countdownEl = document.getElementById("countdown");
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 7);
 
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
 
-    class Particle {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 2 + 1;
-        this.speedX = (Math.random() - 0.5) * 0.5;
-        this.speedY = (Math.random() - 0.5) * 0.5;
+      if (distance <= 0) {
+        countdownEl.textContent = "We are LIVE!";
+        return;
       }
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-      }
-      draw() {
-        ctx.fillStyle = "rgba(29,185,84,0.7)";
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }
 
-    function initParticles() {
-      particles = [];
-      for (let i = 0; i < 120; i++) {
-        particles.push(new Particle());
-      }
-    }
-
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => {
-        p.update();
-        p.draw();
-      });
-      requestAnimationFrame(animateParticles);
-    }
-
-    initParticles();
-    animateParticles();
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
   </script>
 </body>
 </html>
