@@ -1,14 +1,23 @@
 /* === Global === */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #000;         /* hitam full */
-  color: #fff;              /* teks putih */
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #000; /* hitam full */
+  color: #fff; /* teks putih */
   line-height: 1.7;
 }
-a { color: #00e0ff; text-decoration: none; }
-.container { width: 90%; max-width: 1100px; margin: auto; }
-.section { padding: 70px 0; }
+a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.section {
+  padding: 70px 0;
+}
 .section-title {
   font-size: 2rem;
   margin-bottom: 25px;
@@ -19,7 +28,7 @@ a { color: #00e0ff; text-decoration: none; }
 /* === Navbar === */
 .navbar {
   background: #000;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 15px 0;
 }
 .nav-content {
@@ -27,7 +36,9 @@ a { color: #00e0ff; text-decoration: none; }
   justify-content: space-between;
   align-items: center;
 }
-.logo-img { height: 50px; }
+.logo-img {
+  height: 50px;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -38,7 +49,9 @@ a { color: #00e0ff; text-decoration: none; }
   color: #fff;
   transition: color 0.3s;
 }
-.nav-links a:hover { color: #00e0ff; }
+.nav-links a:hover {
+  color: #00e0ff;
+}
 
 /* === Hero === */
 .hero {
@@ -48,15 +61,26 @@ a { color: #00e0ff; text-decoration: none; }
   justify-content: space-between;
   padding: 80px 0;
 }
-.hero-left { flex: 1; min-width: 280px; }
-.hero-right { flex: 1; text-align: center; }
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+}
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
 .profile-img {
   width: 260px;
   border-radius: 15px;
   border: 3px solid #00e0ff;
 }
-.accent { color: #00e0ff; }
-.intro { max-width: 600px; margin-bottom: 20px; }
+.accent {
+  color: #00e0ff;
+}
+.intro {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
 
 /* === Gradient Box === */
 .gradient-box {
@@ -66,14 +90,23 @@ a { color: #00e0ff; text-decoration: none; }
   margin-bottom: 25px;
   box-shadow: 0 0 15px rgba(0, 224, 255, 0.1);
 }
-.exp h3 { margin-top: 0; }
-.date { color: #ccc; font-size: 0.9em; margin-bottom: 10px; }
-.tags { color: #00e0ff; font-weight: bold; }
+.exp h3 {
+  margin-top: 0;
+}
+.date {
+  color: #ccc;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.tags {
+  color: #00e0ff;
+  font-weight: bold;
+}
 
 /* === Footer === */
 .footer {
   text-align: center;
   padding: 20px 0;
   background: #0a0a0a;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
