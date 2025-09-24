@@ -1,98 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thalhah Shafiyurrahman</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="container nav-container">
-      <div class="logo">
-        <!-- Ganti src logo -->
-        <img src="assets/logo.png" alt="Logo" class="logo-img">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thalhah Shafiyurrahman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">
+          <!-- ganti logo-->
+          <img src="assets/logo.png" alt="Logo" class="logo-img" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Hi! I’m <span class="highlight">Thalhah</span></h1>
-        <p>I’m learning to be a Full Stack Web Developer to make business easier and more efficient.</p>
-        <p>I’m helping people like you to be better in modern career, web development, software engineering, business, and life in general. Preparing for professional coding career soon.</p>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1>Hi! I'm <span class="accent">Thalhah</span></h1>
+        <p class="intro">
+          I’m learning to be a Full Stack Web Developer to make business easier
+          and more efficient.
+        </p>
+        <p class="intro">
+          I’m helping people like you to be better in modern career, web
+          development, software engineering, business, and life in general.
+          Preparing for professional coding career soon.
+        </p>
       </div>
-      <div class="hero-photo">
-        <!-- Ganti src foto -->
-        <img src="assets/profile.jpg" alt="Profile Photo">
+      <div class="hero-right">
+        <!-- Ganti foto di sini -->
+        <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>My journey is a mix of languages and technology. I am currently studying Arabic Language at LIPIA Jakarta and Arabic Language at the Islamic University of Madinah. Along the way, I started experimenting with technology as a beginner—first learning HTML and CSS to build simple websites, then exploring Java and even creating small games using Scratch.</p>
-      <p>Curiosity pushed me further into mobile development, where I tried Android with Java and Kotlin, and later discovered the flexibility of Dart and Flutter for cross-platform apps. At the same time, I became interested in IoT and began learning with Arduino, combining software and hardware in fun beginner projects.</p>
-      <p>I am still at the early stage of this journey, but every step makes me more excited to keep learning and growing.</p>
-    </div>
-  </section>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section container">
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="gradient-box">
+        <p>
+          My journey is a mix of languages and technology. I am currently
+          studying Arabic Language at LIPIA Jakarta and Arabic Language at the
+          Islamic University of Madinah. Along the way, I started experimenting
+          with technology as a beginner—first learning HTML and CSS to build
+          simple websites, then exploring Java and even creating small games
+          using Scratch.
+        </p>
+        <p>
+          Curiosity pushed me further into mobile development, where I tried
+          Android with Java and Kotlin, and later discovered the flexibility of
+          Dart and Flutter for cross-platform apps. At the same time, I became
+          interested in IoT and began learning with Arduino, combining software
+          and hardware in fun beginner projects.
+        </p>
+        <p>
+          I am still at the early stage of this journey, but every step makes me
+          more excited to keep learning and growing.
+        </p>
+      </div>
+    </section>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="experience section">
-    <div class="container">
-      <h2>Career Experience</h2>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">CAREER</h2>
 
-      <div class="exp-card">
+      <div class="exp gradient-box">
         <h3>Junior High School / Website & Game Building</h3>
         <p class="date">May 2017 – June 2020 | Bogor, Indonesia</p>
-        <p>I explored web development through HTML and CSS, learned Java, and created simple games using Scratch.</p>
+        <p>
+          I explored web development through HTML and CSS, learned Java, and
+          created simple games using Scratch.
+        </p>
         <p class="tags">HTML • CSS • Java • Scratch</p>
       </div>
 
-      <div class="exp-card">
+      <div class="exp gradient-box">
         <h3>Senior High School / Android App & IoT</h3>
         <p class="date">August 2020 – May 2023 | Bogor, Indonesia</p>
-        <p>Studied Android development with Java & Kotlin, explored Dart & Flutter, and learned IoT with Arduino.</p>
+        <p>
+          Studied Android development with Java & Kotlin, explored Dart &
+          Flutter, and learned IoT with Arduino.
+        </p>
         <p class="tags">Android Studio • Dart • Flutter • Arduino</p>
       </div>
 
-      <div class="exp-card">
+      <div class="exp gradient-box">
         <h3>Business Owner</h3>
         <p class="date">August 2023 – Present | Jakarta, Indonesia</p>
-        <p>Started and managed a carwash business: operations, finance, marketing, and team management.</p>
-        <p class="tags">Business Management • Marketing • Leadership • Inventory</p>
+        <p>
+          Started and managed a carwash business: operations, finance,
+          marketing, and team management.
+        </p>
+        <p class="tags">
+          Business Management • Marketing • Leadership • Inventory
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Let’s continue on <a href="#">Twitter</a>, <a href="#">LinkedIn</a>, or <a href="#">Telegram</a>.</p>
-    </div>
-  </section>
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">CONTACT ME</h2>
+      <p>
+        Let’s continue on <a href="#" class="accent">Twitter</a>,
+        <a href="#" class="accent">LinkedIn</a>, or
+        <a href="#" class="accent">Telegram</a>.
+      </p>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
       <p>© Thalhah Shafiyurrahman | All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
