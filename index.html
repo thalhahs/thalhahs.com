@@ -1,204 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon - Thalhah's Portfolio</title>
-  <style>
-    :root {
-      --bg-light: #fdfdfd;
-      --bg-dark: #0d1117;
-      --text-light: #0d1117;
-      --text-dark: #f5f5f5;
-      --accent: #1db954; /* hijau elegan */
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: var(--bg-light);
-      color: var(--text-light);
-      transition: all 0.5s ease;
-    }
-
-    body.dark {
-      background: var(--bg-dark);
-      color: var(--text-dark);
-    }
-
-    .container {
-      text-align: center;
-      max-width: 700px;
-      padding: 2rem;
-      animation: fadeIn 1.5s ease;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-      animation: pulse 2s infinite alternate;
-    }
-
-    p {
-      margin: 0.5rem 0 1rem;
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    .countdown {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 1.5rem 0;
-      color: var(--accent);
-    }
-
-    .contacts {
-      margin: 1.5rem 0;
-    }
-
-    .contacts a {
-      display: inline-block;
-      margin: 0.5rem;
-      text-decoration: none;
-      color: inherit;
-      border: 1px solid var(--accent);
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      transition: all 0.3s;
-    }
-    .contacts a:hover {
-      background: var(--accent);
-      color: #fff;
-      box-shadow: 0 0 10px var(--accent);
-    }
-
-    .lang-select, .toggle-btn {
-      margin: 0.5rem;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .toggle-btn {
-      background: transparent;
-      border: 2px solid var(--accent);
-      color: inherit;
-      transition: all 0.3s;
-    }
-    .toggle-btn:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes pulse {
-      from { text-shadow: 0 0 5px var(--accent); }
-      to { text-shadow: 0 0 20px var(--accent); }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thalhah Shafiyurrahman</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 id="title">COMING SOON</h1>
-    <p id="subtitle">
-      My portfolio website is being crafted. Stay tuned for the launch next week!
-    </p>
 
-    <!-- Countdown -->
-    <div id="countdown" class="countdown"></div>
-
-    <!-- Contact Info -->
-    <div class="contacts">
-      <a href="https://instagram.com/thalhah._" target="_blank">Instagram</a>
-      <a href="mailto:thalhah@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/thalhah" target="_blank">LinkedIn</a>
-      <a href="https://github.com/thalhahs" target="_blank">GitHub</a>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <!-- Ganti src logo -->
+        <img src="assets/logo.png" alt="Logo" class="logo-img">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Controls -->
-    <select id="langSelect" class="lang-select">
-      <option value="en" selected>English</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="ar">العربية</option>
-      <option value="jp">日本語</option>
-    </select>
-    <button id="toggleMode" class="toggle-btn">Toggle Dark/Light</button>
-  </div>
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi! I’m <span class="highlight">Thalhah</span></h1>
+        <p>I’m learning to be a Full Stack Web Developer to make business easier and more efficient.</p>
+        <p>I’m helping people like you to be better in modern career, web development, software engineering, business, and life in general. Preparing for professional coding career soon.</p>
+      </div>
+      <div class="hero-photo">
+        <!-- Ganti src foto -->
+        <img src="assets/profile.jpg" alt="Profile Photo">
+      </div>
+    </div>
+  </section>
 
-  <script>
-    // Multi-language translations
-    const translations = {
-      en: {
-        title: "COMING SOON",
-        subtitle: "My portfolio website is being crafted. Stay tuned for the launch next week!"
-      },
-      id: {
-        title: "SEGERA HADIR",
-        subtitle: "Website portofolio saya sedang dibuat. Nantikan peluncurannya pekan depan!"
-      },
-      ar: {
-        title: "قريباً",
-        subtitle: "موقعي الشخصي قيد الإنشاء. ترقبوا الإطلاق الأسبوع القادم!"
-      },
-      jp: {
-        title: "近日公開",
-        subtitle: "私のポートフォリオサイトは現在制作中です。来週の公開をお楽しみに！"
-      }
-    };
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>My journey is a mix of languages and technology. I am currently studying Arabic Language at LIPIA Jakarta and Arabic Language at the Islamic University of Madinah. Along the way, I started experimenting with technology as a beginner—first learning HTML and CSS to build simple websites, then exploring Java and even creating small games using Scratch.</p>
+      <p>Curiosity pushed me further into mobile development, where I tried Android with Java and Kotlin, and later discovered the flexibility of Dart and Flutter for cross-platform apps. At the same time, I became interested in IoT and began learning with Arduino, combining software and hardware in fun beginner projects.</p>
+      <p>I am still at the early stage of this journey, but every step makes me more excited to keep learning and growing.</p>
+    </div>
+  </section>
 
-    const title = document.getElementById("title");
-    const subtitle = document.getElementById("subtitle");
-    const langSelect = document.getElementById("langSelect");
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2>Career Experience</h2>
 
-    langSelect.addEventListener("change", e => {
-      const lang = e.target.value;
-      title.textContent = translations[lang].title;
-      subtitle.textContent = translations[lang].subtitle;
-      document.documentElement.lang = lang;
-    });
+      <div class="exp-card">
+        <h3>Junior High School / Website & Game Building</h3>
+        <p class="date">May 2017 – June 2020 | Bogor, Indonesia</p>
+        <p>I explored web development through HTML and CSS, learned Java, and created simple games using Scratch.</p>
+        <p class="tags">HTML • CSS • Java • Scratch</p>
+      </div>
 
-    // Dark/Light mode toggle
-    document.getElementById("toggleMode").addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-    });
+      <div class="exp-card">
+        <h3>Senior High School / Android App & IoT</h3>
+        <p class="date">August 2020 – May 2023 | Bogor, Indonesia</p>
+        <p>Studied Android development with Java & Kotlin, explored Dart & Flutter, and learned IoT with Arduino.</p>
+        <p class="tags">Android Studio • Dart • Flutter • Arduino</p>
+      </div>
 
-    // Countdown (7 days from now)
-    const countdownEl = document.getElementById("countdown");
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 7);
+      <div class="exp-card">
+        <h3>Business Owner</h3>
+        <p class="date">August 2023 – Present | Jakarta, Indonesia</p>
+        <p>Started and managed a carwash business: operations, finance, marketing, and team management.</p>
+        <p class="tags">Business Management • Marketing • Leadership • Inventory</p>
+      </div>
+    </div>
+  </section>
 
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Let’s continue on <a href="#">Twitter</a>, <a href="#">LinkedIn</a>, or <a href="#">Telegram</a>.</p>
+    </div>
+  </section>
 
-      if (distance <= 0) {
-        countdownEl.textContent = "We are LIVE!";
-        return;
-      }
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© Thalhah Shafiyurrahman | All rights reserved.</p>
+    </div>
+  </footer>
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
 </body>
 </html>
