@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Thalhah Shafiyurrahman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: "#050506",
+              fg: "#ffffff",
+              muted: "#c9c9cf",
+              chip: "#0a0a0c",
+              "chip-border": "#3b3b44",
+              card: "#0e0e12",
+              "card-border": "#2a2a32",
+              "accent-1": "#7f5cff",
+              "accent-2": "#ff6b6b",
+            },
+            fontFamily: {
+              rubik: [
+                "Rubik",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "Roboto",
+                "Arial",
+                "sans-serif",
+              ],
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(127, 92, 255, 0.35)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="h-full m-0 font-rubik text-fg bg-bg leading-relaxed">
+    <div
+      class="fixed inset-0 pointer-events-none bg-gradient-radial from-white/8 via-transparent to-transparent bg-[radial-gradient(circle_at_50%_-10%,rgba(255,255,255,.08),transparent_40%),radial-gradient(circle_at_0%_60%,rgba(255,255,255,.06),transparent_35%),radial-gradient(circle_at_100%_40%,rgba(255,255,255,.06),transparent_35%),repeating-radial-gradient(circle_at_50%_50%,rgba(255,255,255,.06)_0_1px,transparent_1px_8px)] bg-[mask-image:radial-gradient(60%_60%_at_50%_40%,#000_60%,transparent_100%)]"
+    ></div>
+
+    <header
+      class="grid grid-cols-[1fr_auto_auto] items-center gap-6 py-5 px-0 w-[92%] max-w-[1180px] mx-auto"
+    >
+      <div class="brand">
+        <div class="font-extrabold tracking-tight">Thalhah</div>
+        <div class="text-muted font-semibold -mt-0.5 text-sm">
+          Shafiyurrahman
+        </div>
+      </div>
+      <nav class="flex gap-2.5 flex-wrap">
+        <a
+          href="index.html"
+          class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]"
+          >Home</a
+        >
+        <a
+          href="index.html#about"
+          class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]"
+          >About Me</a
+        >
+        <a
+          href="experience.html"
+          class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]"
+          >Experience</a
+        >
+        <a
+          href="contact.html"
+          class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]"
+          >Contact Me</a
+        >
+      </nav>
+      <div class="flex gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#cfcfe1] opacity-60"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#cfcfe1] opacity-60"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#cfcfe1] opacity-60"></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Projects -->
+      <section class="py-16 w-[92%] max-w-[1180px] mx-auto">
+        <h2
+          class="text-[30px] tracking-[.12em] font-extrabold uppercase m-0 mb-6 relative after:content-[''] after:block after:w-[110px] after:h-[3px] after:bg-gradient-to-r after:from-accent-1 after:to-accent-2 after:mt-2 after:rounded-[2px]"
+        >
+          MY PROJECTS
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project 1 -->
+          <article
+            class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border"
+          >
+            <div
+              class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 shadow-[0_10px_30px_rgba(0,0,0,.35)] h-full"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-full h-32 bg-gradient-to-br from-accent-1/20 to-accent-2/20 rounded-[8px] mb-4 flex items-center justify-center"
+                >
+                  <span class="text-4xl">📱</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Carwash Management App</h3>
+                <p class="text-muted text-sm mb-4">
+                  A Flutter-based mobile application for managing carwash
+                  operations, including customer tracking, payment processing,
+                  and employee scheduling.
+                </p>
+              </div>
+
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Flutter</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Dart</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Firebase</span
+                >
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="flex-1 bg-accent-1 text-white text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:opacity-90 transition-opacity"
+                  >View Project</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 bg-[#0b0b10] border border-chip-border text-fg text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:border-accent-1 transition-colors"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article
+            class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border"
+          >
+            <div
+              class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 shadow-[0_10px_30px_rgba(0,0,0,.35)] h-full"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-full h-32 bg-gradient-to-br from-accent-1/20 to-accent-2/20 rounded-[8px] mb-4 flex items-center justify-center"
+                >
+                  <span class="text-4xl">🌐</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">
+                  Personal Portfolio Website
+                </h3>
+                <p class="text-muted text-sm mb-4">
+                  A responsive portfolio website built with HTML, CSS, and
+                  JavaScript, featuring modern design and smooth animations.
+                </p>
+              </div>
+
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >HTML</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >CSS</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >JavaScript</span
+                >
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="flex-1 bg-accent-1 text-white text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:opacity-90 transition-opacity"
+                  >View Project</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 bg-[#0b0b10] border border-chip-border text-fg text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:border-accent-1 transition-colors"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article
+            class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border"
+          >
+            <div
+              class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 shadow-[0_10px_30px_rgba(0,0,0,.35)] h-full"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-full h-32 bg-gradient-to-br from-accent-1/20 to-accent-2/20 rounded-[8px] mb-4 flex items-center justify-center"
+                >
+                  <span class="text-4xl">🎮</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Scratch Game Collection</h3>
+                <p class="text-muted text-sm mb-4">
+                  A collection of interactive games created using Scratch,
+                  including puzzle games, educational games, and simple
+                  arcade-style games.
+                </p>
+              </div>
+
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Scratch</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Game Design</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Logic</span
+                >
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="flex-1 bg-accent-1 text-white text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:opacity-90 transition-opacity"
+                  >View Project</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 bg-[#0b0b10] border border-chip-border text-fg text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:border-accent-1 transition-colors"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article
+            class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border"
+          >
+            <div
+              class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 shadow-[0_10px_30px_rgba(0,0,0,.35)] h-full"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-full h-32 bg-gradient-to-br from-accent-1/20 to-accent-2/20 rounded-[8px] mb-4 flex items-center justify-center"
+                >
+                  <span class="text-4xl">🔧</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">IoT Weather Station</h3>
+                <p class="text-muted text-sm mb-4">
+                  An Arduino-based weather monitoring system that collects
+                  temperature, humidity, and pressure data and displays it on a
+                  web interface.
+                </p>
+              </div>
+
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Arduino</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >IoT</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Sensors</span
+                >
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="flex-1 bg-accent-1 text-white text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:opacity-90 transition-opacity"
+                  >View Project</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 bg-[#0b0b10] border border-chip-border text-fg text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:border-accent-1 transition-colors"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article
+            class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border"
+          >
+            <div
+              class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 shadow-[0_10px_30px_rgba(0,0,0,.35)] h-full"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-full h-32 bg-gradient-to-br from-accent-1/20 to-accent-2/20 rounded-[8px] mb-4 flex items-center justify-center"
+                >
+                  <span class="text-4xl">📊</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">
+                  Business Analytics Dashboard
+                </h3>
+                <p class="text-muted text-sm mb-4">
+                  A web-based dashboard for tracking carwash business metrics,
+                  including revenue, customer analytics, and operational
+                  efficiency.
+                </p>
+              </div>
+
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >HTML</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >CSS</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Charts.js</span
+                >
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="flex-1 bg-accent-1 text-white text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:opacity-90 transition-opacity"
+                  >View Project</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 bg-[#0b0b10] border border-chip-border text-fg text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:border-accent-1 transition-colors"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article
+            class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border"
+          >
+            <div
+              class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 shadow-[0_10px_30px_rgba(0,0,0,.35)] h-full"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-full h-32 bg-gradient-to-br from-accent-1/20 to-accent-2/20 rounded-[8px] mb-4 flex items-center justify-center"
+                >
+                  <span class="text-4xl">📱</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Learning Management App</h3>
+                <p class="text-muted text-sm mb-4">
+                  A mobile application for tracking Arabic language learning
+                  progress, with features for vocabulary, grammar exercises, and
+                  progress tracking.
+                </p>
+              </div>
+
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Flutter</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >Dart</span
+                >
+                <span
+                  class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2 py-1 rounded-full text-xs font-bold"
+                  >SQLite</span
+                >
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="flex-1 bg-accent-1 text-white text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:opacity-90 transition-opacity"
+                  >View Project</a
+                >
+                <a
+                  href="#"
+                  class="flex-1 bg-[#0b0b10] border border-chip-border text-fg text-center py-2 px-4 rounded-[8px] text-sm font-semibold hover:border-accent-1 transition-colors"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex items-center justify-between py-7.5 pb-15 text-[#a9a9b6] w-[92%] max-w-[1180px] mx-auto"
+    >
+      <p>© Thalhah Shafiyurrahman. All rights reserved.</p>
+      <div class="flex gap-2">
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+      </div>
+    </footer>
+  </body>
+</html>
