@@ -4,148 +4,223 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thalhah Shafiyurrahman</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bg': '#050506',
+              'fg': '#ffffff',
+              'muted': '#c9c9cf',
+              'chip': '#0a0a0c',
+              'chip-border': '#3b3b44',
+              'card': '#0e0e12',
+              'card-border': '#2a2a32',
+              'accent-1': '#7f5cff',
+              'accent-2': '#ff6b6b',
+            },
+            fontFamily: {
+              'rubik': ['Rubik', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow': '0 0 0 1px rgba(127, 92, 255, 0.35)',
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <div class="frame">
-      <div class="div">
-        <div class="text-wrapper">Thalhah</div>
-        <div class="text-wrapper-2">Shafiyurrahman</div>
+  <body class="h-full m-0 font-rubik text-fg bg-bg leading-relaxed">
+    <div class="fixed inset-0 pointer-events-none bg-gradient-radial from-white/8 via-transparent to-transparent bg-[radial-gradient(circle_at_50%_-10%,rgba(255,255,255,.08),transparent_40%),radial-gradient(circle_at_0%_60%,rgba(255,255,255,.06),transparent_35%),radial-gradient(circle_at_100%_40%,rgba(255,255,255,.06),transparent_35%),repeating-radial-gradient(circle_at_50%_50%,rgba(255,255,255,.06)_0_1px,transparent_1px_8px)] bg-[mask-image:radial-gradient(60%_60%_at_50%_40%,#000_60%,transparent_100%)]"></div>
+
+    <header class="grid grid-cols-[1fr_auto_auto] items-center gap-6 py-5 px-0 w-[92%] max-w-[1180px] mx-auto">
+      <div class="brand">
+        <div class="font-extrabold tracking-tight">Thalhah</div>
+        <div class="text-muted font-semibold -mt-0.5 text-sm">Shafiyurrahman</div>
       </div>
-      <div class="div-2">
-        <div class="about-button">
-          <div class="rectangle"></div>
-          <div class="text-wrapper-3">Home</div>
+      <nav class="flex gap-2.5 flex-wrap">
+        <a href="index.html" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77] bg-accent-1 text-white">Home</a>
+        <a href="index.html#about" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]">About Me</a>
+        <a href="experience.html" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]">Experience</a>
+        <a href="projects.html" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]">Projects</a>
+        <a href="contact.html" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-[10px] bg-chip border border-chip-border text-fg font-semibold text-xs hover:border-[#6b6b77]">Contact Me</a>
+      </nav>
+      <div class="flex gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#cfcfe1] opacity-60"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#cfcfe1] opacity-60"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#cfcfe1] opacity-60"></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="py-10 w-[92%] max-w-[1180px] mx-auto">
+        <div class="text-center">
+          <h1 class="text-[clamp(48px,10vw,112px)] leading-[1.02] tracking-tight m-0 mb-6 font-extrabold">Hi! I'm <span class="bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-text text-transparent">Thalhah</span></h1>
+          <p class="text-muted text-[18px] leading-relaxed max-w-[80ch] m-0 mb-3 mx-auto">I'm learning to be a Full Stack Web Developer to make business easier and more efficient.</p>
+          <p class="text-muted text-[18px] leading-relaxed max-w-[80ch] m-0 mb-3 mx-auto">I'm helping people like you to be better in modern career, web development, software engineering, business, and life in general. Preparing for professional coding career soon.</p>
+          <div class="flex gap-2.5 flex-wrap justify-center mt-4">
+            <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Connect</a>
+            <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Follow</a>
+            <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Chat</a>
+            <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Follow</a>
+          </div>
         </div>
-        <div class="about-button">
-          <div class="text-wrapper-4">About Me</div>
-          <div class="rectangle-2"></div>
+      </section>
+
+      <!-- Conference Photo Section -->
+      <section class="py-10 w-[92%] max-w-[1180px] mx-auto">
+        <div class="flex justify-center">
+          <figure class="relative p-2 rounded-[14px] bg-[rgba(14,14,18,.6)] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border shadow-[0_10px_40px_rgba(127,92,255,.35)]">
+            <div class="bg-[rgba(14,14,18,.6)] rounded-[10px] p-px">
+              <div class="rounded-[8px] overflow-hidden aspect-[16/9] w-[min(1100px,92vw)]">
+                <img src="assets/profile.jpg" alt="Conference Photo" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </figure>
         </div>
-        <div class="about-button">
-          <div class="text-wrapper-5">Experience</div>
-          <div class="rectangle-3"></div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="py-16 w-[92%] max-w-[1180px] mx-auto">
+        <h2 class="text-[30px] tracking-[.12em] font-extrabold uppercase m-0 mb-6 relative after:content-[''] after:block after:w-[110px] after:h-[3px] after:bg-gradient-to-r after:from-accent-1 after:to-accent-2 after:mt-2 after:rounded-[2px]">ABOUT ME</h2>
+        <div class="grid gap-3.5">
+          <article class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border">
+            <div class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-5 shadow-[0_10px_30px_rgba(0,0,0,.35)]">
+              <p>My journey is a mix of languages and technology. I am currently studying Arabic Language at LIPIA Jakarta and Arabic Language at the Islamic University of Madinah. Along the way, I started experimenting with technology as a beginner—first learning HTML and CSS to build simple websites, then exploring Java and even creating small games using Scratch.</p>
+              <p>Curiosity pushed me further into mobile development, where I tried Android with Java and Kotlin, and later discovered the flexibility of Dart and Flutter for cross-platform apps. At the same time, I became interested in IoT and began learning with Arduino, combining software and hardware in fun beginner projects.</p>
+              <p>I am still at the early stage of this journey, but every step makes me more excited to keep learning and growing.</p>
+            </div>
+          </article>
         </div>
-        <div class="about-button-2">
-          <div class="text-wrapper-6">Contact Me</div>
-          <div class="rectangle-2"></div>
+      </section>
+
+      <!-- Career -->
+      <section id="career" class="py-16 w-[92%] max-w-[1180px] mx-auto">
+        <h2 class="text-[30px] tracking-[.12em] font-extrabold uppercase m-0 mb-6 relative after:content-[''] after:block after:w-[110px] after:h-[3px] after:bg-gradient-to-r after:from-accent-1 after:to-accent-2 after:mt-2 after:rounded-[2px]">CAREER</h2>
+        <div class="grid gap-3.5">
+          <article class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border">
+            <div class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-5 shadow-[0_10px_30px_rgba(0,0,0,.35)]">
+              <header class="flex justify-between items-baseline gap-3 mb-2">
+                <h3>Junior High School / Website & Game Building</h3>
+                <span class="text-muted text-xs">May 2017 – June 2020 | Bogor, Indonesia</span>
+              </header>
+              <p>I have explored various aspects of technology and programming. I started with the basics of web development through HTML and CSS, which gave me a foundation in designing and structuring websites. I then moved on to learning Java, which allowed me to understand object-oriented programming concepts. Additionally, I have experience in creating simple games using Scratch.</p>
+              <div class="flex gap-2 flex-wrap mt-2.5">
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">HTML</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">CSS</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Java</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Scratch</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border">
+            <div class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-5 shadow-[0_10px_30px_rgba(0,0,0,.35)]">
+              <header class="flex justify-between items-baseline gap-3 mb-2">
+                <h3>Senior High School / Android App & IoT</h3>
+                <span class="text-muted text-xs">August 2020 – May 2023 | Bogor, Indonesia</span>
+              </header>
+              <p>I have begun studying Android development with Java and Kotlin, while also getting introduced to Dart and Flutter for cross‑platform app development. In addition, I am learning about the Internet of Things (IoT) through Arduino, which has given me valuable hands‑on experience connecting software with hardware.</p>
+              <div class="flex gap-2 flex-wrap mt-2.5">
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Android Studio</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Dart</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Flutter</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Arduino</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border">
+            <div class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-5 shadow-[0_10px_30px_rgba(0,0,0,.35)]">
+              <header class="flex justify-between items-baseline gap-3 mb-2">
+                <h3>Business Owner</h3>
+                <span class="text-muted text-xs">August 2023 – Present | Jakarta, Indonesia</span>
+              </header>
+              <p>My experience began with our family business, a carwash we built from the ground up. I started as the only worker, later becoming the cashier who managed daily finance and stock control. Over time, I took on marketing to bring in more customers and improve loyalty. I also had to handle employees, interact directly with customers, and ensure operations ran smoothly.</p>
+              <div class="flex gap-2 flex-wrap mt-2.5">
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Business Management</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Marketing</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Leadership</span>
+                <span class="bg-[#0b0b10] border border-chip-border text-[#dcdcf0] px-2.5 py-1.5 rounded-full text-[11px] font-bold">Inventory</span>
+              </div>
+            </div>
+          </article>
         </div>
+      </section>
+
+      <!-- Techstack -->
+      <section id="techstack" class="py-16 w-[92%] max-w-[1180px] mx-auto">
+        <h2 class="text-[30px] tracking-[.12em] font-extrabold uppercase m-0 mb-6 relative after:content-[''] after:block after:w-[110px] after:h-[3px] after:bg-gradient-to-r after:from-accent-1 after:to-accent-2 after:mt-2 after:rounded-[2px]">TECHSTACK</h2>
+        <div class="grid grid-cols-9 gap-3.5 overflow-x-auto">
+          <!-- Android Studio -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Android Studio" class="w-14 h-14 object-contain" src="assets/androidstudio.svg" />
+          </div>
+          <!-- Cursor -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Cursor" class="w-14 h-14 object-contain" src="assets/cursor.svg" />
+          </div>
+          <!-- Dart -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Dart" class="w-14 h-14 object-contain" src="assets/dart.png" />
+          </div>
+          <!-- Figma -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Figma" class="w-14 h-14 object-contain" src="assets/figma.svg" />
+          </div>
+          <!-- Flutter -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Flutter" class="w-14 h-14 object-contain" src="assets/flutter.svg" />
+          </div>
+          <!-- Java -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Java" class="w-14 h-14 object-contain" src="assets/java.svg" />
+          </div>
+          <!-- Supabase -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Supabase" class="w-14 h-14 object-contain" src="assets/supabase.svg" />
+          </div>
+          <!-- VS Code -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="Visual Studio Code" class="w-14 h-14 object-contain" src="assets/vscode.svg" />
+          </div>
+          <!-- GitHub -->
+          <div class="bg-[#0b0b10] border border-chip-border aspect-square rounded-[10px] shadow-[inset_0_0_0_1px_rgba(255,255,255,.02)] flex items-center justify-center p-3">
+            <img alt="GitHub" class="w-14 h-14 object-contain" src="assets/github.svg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16 w-[92%] max-w-[1180px] mx-auto">
+        <h2 class="text-[30px] tracking-[.12em] font-extrabold uppercase m-0 mb-6 relative after:content-[''] after:block after:w-[110px] after:h-[3px] after:bg-gradient-to-r after:from-accent-1 after:to-accent-2 after:mt-2 after:rounded-[2px]">CONTACT ME</h2>
+        <div class="relative p-0.5 rounded-[14px] border border-transparent bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-border">
+          <div class="bg-gradient-to-b from-[rgba(14,14,18,.65)] to-[rgba(14,14,18,.35)] rounded-[12px] p-6 grid gap-3.5">
+            <p class="m-0 text-muted">Let's continue on Twitter or LinkedIn or Telegram</p>
+            <div class="flex gap-2.5 flex-wrap">
+              <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Connect</a>
+              <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Follow</a>
+              <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Chat</a>
+              <a class="bg-[#0b0b10] border border-chip-border px-3.5 py-2 rounded-[10px] font-bold text-xs hover:shadow-[0_0_0_1px_#6b6b77_inset]" href="#">Follow</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex items-center justify-between py-7.5 pb-15 text-[#a9a9b6] w-[92%] max-w-[1180px] mx-auto">
+      <p>© Thalhah Shafiyurrahman. All rights reserved.</p>
+      <div class="flex gap-2">
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
+        <span class="w-1.25 h-1.25 rounded-full bg-[#cfcfe1] opacity-40"></span>
       </div>
-      <img class="img" src="img/frame-1455.svg" />
-    </div>
-
-
-    <!-- ===== HERO ===== -->
-    <section id="home" class="hero container">
-      <div class="hero-left">
-        <h1>Hi! I'm <span class="accent">Thalhah</span></h1>
-        <p class="intro">
-          I’m learning to be a Full Stack Web Developer to make business easier
-          and more efficient.
-        </p>
-        <p class="intro">
-          I’m helping people like you to be better in modern career, web
-          development, software engineering, business, and life in general.
-          Preparing for professional coding career soon.
-        </p>
-      </div>
-      <div class="hero-right">
-        <!-- Ganti foto di sini -->
-        <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img" />
-      </div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="section container">
-      <h2 class="section-title">ABOUT ME</h2>
-      <div class="gradient-box">
-        <p>
-          My journey is a mix of languages and technology. I am currently
-          studying Arabic Language at LIPIA Jakarta and Arabic Language at the
-          Islamic University of Madinah. Along the way, I started experimenting
-          with technology as a beginner—first learning HTML and CSS to build
-          simple websites, then exploring Java and even creating small games
-          using Scratch.
-        </p>
-        <p>
-          Curiosity pushed me further into mobile development, where I tried
-          Android with Java and Kotlin, and later discovered the flexibility of
-          Dart and Flutter for cross-platform apps. At the same time, I became
-          interested in IoT and began learning with Arduino, combining software
-          and hardware in fun beginner projects.
-        </p>
-        <p>
-          I am still at the early stage of this journey, but every step makes me
-          more excited to keep learning and growing.
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== EXPERIENCE ===== -->
-    <section id="experience" class="section container">
-      <h2 class="section-title">CAREER</h2>
-
-      <div class="exp gradient-box">
-        <h3>Junior High School / Website & Game Building</h3>
-        <p class="date">May 2017 – June 2020 | Bogor, Indonesia</p>
-        <p>
-          I have explored various aspects of technology and programming. I
-          started with the basics of web development through HTML and CSS, which
-          gave me a foundation in designing and structuring websites. I then
-          moved on to learning Java, which allowed me to understand
-          object-oriented programming concepts. Additionally, I have experience
-          in creating simple games using Scratch, a visual programming platform
-          that helped me build creativity and problem-solving skills in a fun
-          way. HTML CSS Java Scratch
-        </p>
-        <p class="tags">HTML • CSS • Java • Scratch</p>
-      </div>
-
-      <div class="exp gradient-box">
-        <h3>Senior High School / Android App & IoT</h3>
-        <p class="date">August 2020 – May 2023 | Bogor, Indonesia</p>
-        <p>
-          I have begun studying Android development with Java and Kotlin, while
-          also getting introduced to Dart and Flutter for cross-platform app
-          development. In addition, I am learning about the Internet of Things
-          (IoT) through Arduino, which has given me valuable hands-on experience
-          connecting software with hardware. Although I am still at an early
-          stage, I am very enthusiastic about growing my skills in these areas.
-        </p>
-        <p class="tags">Android Studio • Dart • Flutter • Arduino</p>
-      </div>
-
-      <div class="exp gradient-box">
-        <h3>Business Owner</h3>
-        <p class="date">August 2023 – Present | Jakarta, Indonesia</p>
-        <p>
-          My experience began with our family business, a carwash we built from
-          the ground up. I started as the only worker, later becoming the
-          cashier who managed daily finance and stock control. Over time, I took
-          on marketing to bring in more customers and improve loyalty. I also
-          had to handle employees, interact directly with customers, and even
-          take care of technical details to ensure operations ran smoothly.
-          Through this journey, I mastered every aspect of the business, from
-          the smallest detail to overall management
-        </p>
-        <p class="tags">
-          Business Management • Marketing • Leadership • Inventory
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section container">
-      <h2 class="section-title">CONTACT ME</h2>
-      <p>
-        Let’s continue on <a href="#" class="accent">Twitter</a>,
-        <a href="#" class="accent">LinkedIn</a>, or
-        <a href="#" class="accent">Telegram</a>.
-      </p>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-      <p>© Thalhah Shafiyurrahman | All rights reserved.</p>
     </footer>
   </body>
 </html>
