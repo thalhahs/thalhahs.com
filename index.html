@@ -111,6 +111,21 @@
         text-align: right;
       }
       
+      /* Ensure centered blocks remain centered in RTL */
+      [dir="rtl"] .text-center {
+        text-align: center;
+      }
+
+      /* Hero typography tuning */
+      .hero-title {
+        text-wrap: balance;
+      }
+
+      .hero-description {
+        line-height: 1.6;
+        text-wrap: pretty;
+      }
+
       [dir="rtl"] .language-dropdown-content {
         right: auto;
         left: 0;
@@ -284,7 +299,7 @@
       <section id="home" class="py-10 px-4 sm:px-6 w-full max-w-[1180px] mx-auto">
         <div class="text-center">
           <h1
-            class="hero-title text-[clamp(48px,10vw,112px)] leading-[1.02] tracking-tight m-0 mb-6 font-extrabold whitespace-nowrap"
+            class="hero-title text-[clamp(48px,10vw,112px)] leading-[1.02] tracking-tight m-0 mb-6 font-extrabold"
           >
             <span data-translate="hero.greeting">Hi! I'm</span>
             <span
@@ -293,14 +308,14 @@
             >
           </h1>
           <p
-            class="text-muted text-[18px] leading-relaxed max-w-[80ch] m-0 mb-3 mx-auto"
+            class="hero-description text-muted text-[18px] max-w-[80ch] m-0 mb-3 mx-auto"
             data-translate="hero.description1"
           >
             I'm learning to be a Full Stack Web Developer to make business
             easier and more efficient.
           </p>
           <p
-            class="text-muted text-[18px] leading-relaxed max-w-[80ch] m-0 mb-3 mx-auto"
+            class="hero-description text-muted text-[18px] max-w-[80ch] m-0 mb-3 mx-auto"
             data-translate="hero.description2"
           >
             I'm helping people like you to be better in modern career, web
