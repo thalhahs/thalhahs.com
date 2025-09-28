@@ -120,24 +120,6 @@
         flex-direction: row-reverse;
       }
       
-      /* Hero title responsive improvements */
-      .hero-greeting {
-        font-size: clamp(14px, 3vw, 28px);
-        margin-right: 0.5rem;
-        display: inline-block;
-      }
-      
-      .hero-name {
-        font-size: clamp(48px, 10vw, 112px);
-        display: inline-block;
-      }
-      
-      /* Japanese specific adjustments */
-      [lang="ja"] .hero-greeting {
-        font-size: clamp(12px, 2.5vw, 24px);
-        margin-right: 0.3rem;
-      }
-      
       /* Mobile responsiveness */
       @media (max-width: 1024px) {
         .header-grid {
@@ -306,9 +288,14 @@
       <!-- Hero -->
       <section id="home" class="py-10 px-4 sm:px-6 w-full max-w-[1180px] mx-auto">
         <div class="text-center">
-          <h1 class="leading-[1.02] tracking-tight m-0 mb-6 font-extrabold whitespace-nowrap">
-            <span class="hero-greeting" data-translate="hero.greeting">Hi! I'm</span>
-            <span class="hero-name bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-text text-transparent" data-translate="hero.name">Thalhah</span>
+          <h1
+            class="hero-title text-[clamp(48px,10vw,112px)] leading-[1.02] tracking-tight m-0 mb-6 font-extrabold whitespace-nowrap"
+          >
+            <span data-translate="hero.greeting">Hi! I'm</span>
+            <span
+              class="bg-gradient-to-r from-accent-1 to-accent-2 bg-clip-text text-transparent"
+              >Thalhah</span
+            >
           </h1>
           <p
             class="text-muted text-[18px] leading-relaxed max-w-[80ch] m-0 mb-3 mx-auto"
@@ -401,7 +388,7 @@
               <p data-translate="about.paragraph2">
                 Curiosity pushed me further into mobile development, where I
                 tried Android with Java and Kotlin, and later discovered the
-                flexibility of Dart and Flutter for cross‑platform apps. At the
+                flexibility of Dart and Flutter for cross-platform apps. At the
                 same time, I became interested in IoT and began learning with
                 Arduino, combining software and hardware in fun beginner
                 projects.
@@ -731,7 +718,6 @@
           "nav.projects": "Projects",
           "nav.contact": "Contact Me",
           "hero.greeting": "Hi! I'm",
-          "hero.name": "Thalhah",
           "hero.description1": "I'm learning to be a Full Stack Web Developer to make business easier and more efficient.",
           "hero.description2": "I'm helping people like you to be better in modern career, web development, software engineering, business, and life in general. Preparing for professional coding career soon.",
           "hero.connect": "Connect",
@@ -775,7 +761,6 @@
           "nav.projects": "Proyek",
           "nav.contact": "Hubungi Saya",
           "hero.greeting": "Hai! Saya",
-          "hero.name": "Thalhah",
           "hero.description1": "Saya sedang belajar menjadi Full Stack Web Developer untuk membuat bisnis lebih mudah dan efisien.",
           "hero.description2": "Saya membantu orang seperti Anda untuk menjadi lebih baik dalam karir modern, pengembangan web, rekayasa perangkat lunak, bisnis, dan kehidupan secara umum. Mempersiapkan karir coding profesional segera.",
           "hero.connect": "Hubungi",
@@ -819,7 +804,6 @@
           "nav.projects": "المشاريع",
           "nav.contact": "اتصل بي",
           "hero.greeting": "مرحباً! أنا",
-          "hero.name": "طلحة",
           "hero.description1": "أتعلم لأصبح مطور ويب كامل المكدس لجعل الأعمال أسهل وأكثر كفاءة.",
           "hero.description2": "أساعد أشخاص مثلك ليكونوا أفضل في المسار المهني الحديث، وتطوير الويب، وهندسة البرمجيات، والأعمال، والحياة بشكل عام. أستعد للمسار المهني في البرمجة قريباً.",
           "hero.connect": "تواصل",
@@ -854,7 +838,7 @@
           "skills.leadership": "القيادة",
           "skills.inventory": "المخزون",
           "contact.message": "دعنا نتواصل على تويتر أو لينكد إن أو تليجرام",
-          "footer.copyright": "© طلحة شفي الرحمن. جميع الحقوق محفوظة."
+          "footer.copyright": "© ثلحة شفي الرحمن. جميع الحقوق محفوظة."
         },
         ja: {
           "nav.home": "ホーム",
@@ -863,7 +847,6 @@
           "nav.projects": "プロジェクト",
           "nav.contact": "お問い合わせ",
           "hero.greeting": "こんにちは！私は",
-          "hero.name": "トルハ",
           "hero.description1": "ビジネスをより簡単で効率的にするために、フルスタックWeb開発者になることを学んでいます。",
           "hero.description2": "現代のキャリア、Web開発、ソフトウェアエンジニアリング、ビジネス、そして一般的な生活において、あなたのような人々がより良くなるのを手助けしています。まもなくプロのコーディングキャリアの準備をしています。",
           "hero.connect": "接続",
@@ -898,7 +881,7 @@
           "skills.leadership": "リーダーシップ",
           "skills.inventory": "在庫管理",
           "contact.message": "Twitter、LinkedIn、またはTelegramで続けましょう",
-          "footer.copyright": "© トルハ シャフィユルラフマン. 全著作権所有。"
+          "footer.copyright": "© Thalhah Shafiyurrahman. 全著作権所有。"
         },
         ru: {
           "nav.home": "Главная",
@@ -907,7 +890,6 @@
           "nav.projects": "Проекты",
           "nav.contact": "Связаться",
           "hero.greeting": "Привет! Я",
-          "hero.name": "Тальха",
           "hero.description1": "Я изучаю Full Stack веб-разработку, чтобы сделать бизнес проще и эффективнее.",
           "hero.description2": "Я помогаю таким людям как вы стать лучше в современной карьере, веб-разработке, программной инженерии, бизнесе и жизни в целом. Готовлюсь к профессиональной карьере программиста.",
           "hero.connect": "Связаться",
@@ -942,7 +924,7 @@
           "skills.leadership": "Лидерство",
           "skills.inventory": "Инвентарь",
           "contact.message": "Давайте продолжим в Twitter, LinkedIn или Telegram",
-          "footer.copyright": "© Тальха Шафиюрахман. Все права защищены."
+          "footer.copyright": "© Thalhah Shafiyurrahman. Все права защищены."
         }
       };
 
